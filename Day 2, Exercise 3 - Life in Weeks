@@ -1,0 +1,11 @@
+# 🚨 Don't change the code below 👇
+age = input("What is your current age?")
+# 🚨 Don't change the code above 👆
+
+#Write your code below this line 👇
+
+time_to_live = 90 - int(age)
+days_to_live = int(time_to_live) * 365
+weeks_to_live = int(time_to_live) * 52
+months_to_live = int(time_to_live) * 12
+print(f'You have {days_to_live} days, {weeks_to_live} weeks, and {months_to_live} months left.')
