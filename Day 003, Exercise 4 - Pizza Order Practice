@@ -15,12 +15,7 @@ menu = {
 
 def pizza(size):
     size = size.lower()
-    if add_pepperoni.lower() == "y":
-        bill = menu[size]['cost'] + menu[size]['pep']
-    else:
-        bill = menu[size]['cost']
-    if extra_cheese.lower() == 'y':
-        bill += 1
-    print(f'Your final bill is: ${bill}.')
+    bill = menu[size]['cost'] + menu[size]['pep'] if add_pepperoni.lower() == 'y' else menu[size]['cost']
+    print(f'Your final bill is: ${bill}' if extra_cheese.lower == "n" else f'Your final bill is: ${bill + 1}')
 
 pizza(size)
